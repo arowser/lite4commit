@@ -1,4 +1,4 @@
-module PeercoinBalanceUpdater
+module LitecoinBalanceUpdater
   COIN = 1000000 # ppcoin/src/util.h
 
   def self.work
@@ -6,7 +6,7 @@ module PeercoinBalanceUpdater
       start = 0
       count = 10
       loop do
-        transactions = PeercoinDaemon.instance.list_transactions(project.address_label, count, start)
+        transactions = LitecoinDaemon.instance.list_transactions(project.address_label, count, start)
         break if transactions.empty?
 
         transactions.each do |transaction|

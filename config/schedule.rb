@@ -21,7 +21,7 @@
 
 require File.expand_path('../../config/environment', __FILE__)
 every :reboot do
-  if daemon = CONFIG['peercoin']['daemon']
+  if daemon = CONFIG['litecoin']['daemon']
     command daemon 
   end
 end
@@ -29,6 +29,6 @@ end
 if delay = CONFIG['tipper_delay']
   delay = eval(delay)
   every delay do
-    runner "PeercoinBalanceUpdater.work; BitcoinTipper.work"
+    runner "LitecoinBalanceUpdater.work; BitcoinTipper.work"
   end
 end

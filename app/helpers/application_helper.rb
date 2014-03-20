@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def to_btc satoshies
-    satoshies.to_d / PeercoinBalanceUpdater::COIN if satoshies
+    satoshies.to_d / LitecoinBalanceUpdater::COIN if satoshies
   end
 
   def transaction_url(txid)
