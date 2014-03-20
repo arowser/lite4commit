@@ -1,5 +1,5 @@
 module LitecoinBalanceUpdater
-  COIN = 1000000 # ppcoin/src/util.h
+  COIN = 100000000 # litecoin/src/util.h
 
   def self.work
     Project.all.each do |project|

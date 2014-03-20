@@ -3,7 +3,7 @@ module ApplicationHelper
     return nil unless amount
     nobr = options.has_key?(:nobr) ? options[:nobr] : true
     currency = options[:currency] || false
-    btc = "%.8f PPC" % to_btc(amount)
+    btc = "%.8f LTC" % to_btc(amount)
     btc = "<span class='convert-from-btc' data-to='#{currency.upcase}'>#{btc}</span>" if currency
     btc = "<nobr>#{btc}</nobr>" if nobr
     btc.html_safe
@@ -14,6 +14,6 @@ module ApplicationHelper
   end
 
   def transaction_url(txid)
-    "http://bkchain.org/ppc/tx/#{txid}"
+    "http://http://block-explorer.com/tx/#{txid}"
   end
 end
