@@ -2,7 +2,7 @@ Lite4commit
 ==========
 
 [![litecoin tip for next commit](http://lite4commit.com/projects/1.svg)](http://lite4commit.com/projects/1)
-[![bitcoin tip for next commit](http://tip4commit.com/projects/560.svg)](http://tip4commit.com/projects/560)
+[![bitcoin tip for next commit](http://tip4commit.com/projects/656.svg)](http://tip4commit.com/projects/656)
 
 Donate litecoins to open source projects or make commits and get tips for it.
 
