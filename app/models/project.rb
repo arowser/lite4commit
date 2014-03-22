@@ -36,7 +36,7 @@ class Project < ActiveRecord::Base
           select{|c| !(c.commit.message =~ /^(Merge\s|auto\smerge)/)}.
           # Filter fake emails
           select{|c| c.commit.author.email =~ Devise::email_regexp }.
-          # Filter commited after t4c project creation
+          # Filter commited after l4c project creation
           select{|c| c.commit.committer.date > self.deposits.first.created_at }.
           to_a
       end
