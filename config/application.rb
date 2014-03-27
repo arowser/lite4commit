@@ -8,7 +8,7 @@ Bundler.require(:default, Rails.env)
 
 CONFIG ||= YAML::load(File.open("config/config.yml"))
 
-module T4c
+module L4c
   class Application < Rails::Application
 
   # Settings in config/environments/* take precedence over those specified here.

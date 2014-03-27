@@ -1,4 +1,4 @@
-T4c::Application.routes.draw do
+L4c::Application.routes.draw do
 
   root 'home#index'
 

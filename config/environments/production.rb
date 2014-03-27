@@ -1,4 +1,4 @@
-T4c::Application.configure do
+L4c::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -84,7 +84,7 @@ T4c::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   if (exception_email = CONFIG["exception_email"]).present?
-    T4c::Application.config.middleware.use ExceptionNotification::Rack,
+    L4c::Application.config.middleware.use ExceptionNotification::Rack,
       :email => {
         :email_prefix => "[#{default_hostname}] ",
         :sender_address => default_from,
